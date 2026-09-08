@@ -1,0 +1,208 @@
+body{
+    margin: 0;
+    font-family:"Inria serif", Serif;
+}
+
+header {
+    height: 164px;
+    background: linear-gradient(180deg,#003BC6,#1f60f8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 113px 0 92px;
+}
+
+.signinbutton{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 21px 81px;
+    border-radius: 999px;
+    background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+    color: white;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    box-shadow: 1px 10px 25px rgba(14, 0, 45, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.signinbutton:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 4px 10px rgba(42, 14, 107, 0.35);
+    background: linear-gradient(135deg, #5827c9, #69579d);
+}
+
+.signinbutton:active{
+    transform: translateY(2px);
+    box-shadow: 1px 4px 20px rgba(255, 255, 255, 0.50);
+}
+
+.initialscreen{
+    position: relative;
+    overflow: hidden;
+    
+    aspect-ratio: 1279 / 541;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.initialscreenback{
+    width:100%;
+    position: absolute;
+    inset:0;
+    background: url("images/initialbackground.png") center/cover no-repeat;
+    opacity:0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+.initialscreen h1{
+    position: relative;
+    font-size: 60px;
+    margin: 0;
+    padding: 0 24px;
+    font-weight:700;
+    text-align: center;
+    opacity:0;
+    transform: translateY(60px);
+    animation: fadeInUp 2.5s ease-out forwards;
+}
+
+
+
+@keyframes fadeIn{
+    to {
+        opacity:0.4;
+    }
+}
+
+@keyframes fadeInUp{
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.pastlife {
+    font-size:60px;
+    margin-left:120px;
+}
+
+.pastpictures{
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-bottom:25px;
+}
+.pastpictures h2{
+    font-size: 30px;
+}
+.pastpictures h3{
+    font-size: 20px;
+    color:grey;
+}
+
+.pictureframe{
+    width:300px;
+    padding-top:10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 3px solid grey;
+    border-radius: 10px;
+    margin:0 5px;
+}
+
+.picture{
+    width:100%;
+}
+
+.encouragement{
+    display: flex;
+    padding-left:120px;
+    margin:0;
+}
+
+.statement{
+    width: 600px;
+    margin-right: 60px;
+    justify-content: center;
+}
+
+.statement h1{
+    font-size:45px;
+    font-weight:500px;
+    margin-bottom:50px;
+}
+
+.statement h2{
+    font-size:33px;
+    margin-bottom:3px;
+}
+
+.statement h3{
+    font-size:25px;
+    font-weight:100;
+}
+
+.statement .signinbutton{
+    display: block;
+    margin: 0 auto;
+}
+
+.otherppl h1{
+    margin-top:120px;
+    margin-bottom:120px;
+    text-align: center;
+    font-size:50px;
+}
+
+.inquire{
+    background:#c2c1c1;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.inquire h1{
+    font-size: 40px;
+    width:650px;
+    font-weight:350;
+    margin-left:120px;
+    letter-spacing: 1px;
+}
+
+.inquirebutton {
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius:999px;
+    padding:25px 90px;
+    background: linear-gradient(45deg, #ff6523,#faa032);
+    color:#000000;
+    font-size:30px;
+    font-weight:550;
+    letter-spacing: 1.0px;
+    box-shadow:1px 10px 20px rgba(85, 77, 101, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15 ease;
+}
+
+.inquirebutton:hover{
+    transform: translateY(-2px);
+    box-shadow: 1px 20px 30px rgba(31, 25, 44, 0.35);
+    background: #9e3200;
+}
+
+.inquirebutton:active{
+    transform: translateY(5px);
+    box-shadow: 1px 20px 40px rgba(31, 25, 44, 0.35);
+    background: #9a3100;
+}
+
+footer {
+    height: 500px;
+    background:rgb(224, 223, 223);
+
+}
